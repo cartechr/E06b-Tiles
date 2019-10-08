@@ -9,7 +9,7 @@ SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Tiled Map Editor Test"
 
 # Constants used to scale our sprites from their original size
-CHARACTER_SCALING = 0.5
+CHARACTER_SCALING = 0.2
 TILE_SCALING = 0.5
 SPRITE_PIXEL_SIZE = 64
 GRID_PIXEL_SIZE = (SPRITE_PIXEL_SIZE * TILE_SCALING)
@@ -76,7 +76,7 @@ class MyGame(arcade.Window):
         # Set up the player, specifically placing it at these coordinates.
         self.player_sprite = arcade.Sprite("assets/player.png", CHARACTER_SCALING)
         self.player_sprite.center_y = 96
-        self.player_sprite.center_x = 64
+        self.player_sprite.center_x = 5
         self.player_list.append(self.player_sprite)
 
         # --- Load in a map from the tiled editor ---
